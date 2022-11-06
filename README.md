@@ -12,11 +12,11 @@ While more broad descriptions can be found in the notebook itself, here we prese
     
     **B**. Speed Rate 9.38
     
-    **C**. Compression rate 10.2
+    **C**. Compression rate 8.26
     
     **D**. Quality 
   
-2. Experiment **"Stupid student, Smart teacjer"**
+2. Experiment **"Stupid student, Smart teacjer"** (Winner)
     
     **A**. QAT + Dark KD + Attention KD + RNN KD + qint8
     
@@ -32,7 +32,7 @@ While more broad descriptions can be found in the notebook itself, here we prese
     
     **B**. Speed Rate 3.5
     
-    **C**. Compression rate 
+    **C**. Compression rate 2.6
     
     **D**. Quality 5e-5
     
