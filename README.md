@@ -18,32 +18,43 @@ While more broad descriptions can be found in the notebook itself, here we prese
   
 2. Experiment **"Stupid student, Smart teacjer"**
     
-    **A**. QAT + Dark KD + Attention KD + RNN KD + 
+    **A**. QAT + Dark KD + Attention KD + RNN KD + qint8
     
-    **B**. Speed Rate 
+    **B**. Speed Rate 10.1
     
-    **C**. Compression rate 
+    **C**. Compression rate 8.81
     
-    **D**. Quality 
+    **D**. Quality 4.6e-5
 
 3. Experiment **"What if..?"**
     
     **A**. Dark KD + Attention KD + qint8
     
-    **B**. Speed Rate 
+    **B**. Speed Rate 3.5
     
     **C**. Compression rate 
     
-    **D**. Quality 
+    **D**. Quality 5e-5
+    
+4. Experiment **"MC dark KD"**
+    
+    **A**. Dark KD 
+    
+    **B**. Speed Rate 5.7
+    
+    **C**. Compression rate 5
+    
+    **D**. Quality 5.4e-5
 
 
 * #### How to reproduce your model?
 
-All the required code and hyperparameters' values can be found in cells, devoted to each experiment. However, it is essential to underscore that models hardly rely on the chosen seed's value. Nevertheless, it sometimes might take quite more / les epochs than stated, so special condition to exit training loop at sufficient quality was added.
+All the required code and hyperparameters' values can be found in cells, devoted to each experiment. However, it is essential to underscore that models hardly rely on the chosen seed's value. Nevertheless, it sometimes might take quite more / less epochs than stated, so special condition to exit training loop at sufficient quality was added.
 
 However, mainly we take T = 10 and high value of alpha for dark KD, train for approximate 15-20 epochs with lr starting from 3e-3, going down to 2e-4 in step manner. 
 
-* Training logs
+* Training logs for each experiment are all placed in the respective directory.
+
 * What worked and what didn't work?
 
 >  pros
@@ -62,7 +73,7 @@ On the other hand, if we continue topic of dynamic quantization, float16 seemed 
 
 Also to add is pruning. This tool really tried it's best to bleed me dry. First of all, it appered that we need to wrap torch structured pruning with in order to make model drop the annihilated layers. In other words, since reducing values to zero does not change either FLOPs or size, we had to create new model after each block's pruning. However, it wouldn't be so bad if we didn't face the following challenge. The quality was dropping in crazy manner compared to processing without prunning. Thus, it is not presented even in a single experiment, but we have a corresponding example.
 
-Last to mention is the usage of RNN insted of GRU. While some collegues asserted there is a way to train it for the benchmark, we did not succeed in it, at least for good rates of speed and compression. 
+Last to mention is the usage of RNN insted of GRU. While some collegues asserted there is a way to train it for the benchmark, we did not succeed in it, at least for good rates of speed and compression for a very long time. Only a really hard search for hyperparameters has accidently given us the desired quality.
 
 * What were the major challenges?
 
