@@ -1,0 +1,131 @@
+2022-11-06 21:32:11,987 - experiment_two - INFO - Experiment model: CRNN(
+  (quant): QuantStub()
+  (activation): ReLU()
+  (conv): Conv2d(1, 4, kernel_size=(7, 18), stride=(5, 12))
+  (dequant): DeQuantStub()
+  (flatten): Flatten(start_dim=1, end_dim=2)
+  (gru): RNN(28, 29, batch_first=True, dropout=0.1)
+  (attention): Attention(
+    (energy): Sequential(
+      (0): Linear(in_features=29, out_features=29, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=29, out_features=1, bias=True)
+    )
+  )
+  (classifier): Linear(in_features=29, out_features=2, bias=True)
+  (equalizer): Linear(in_features=29, out_features=32, bias=True)
+  (equalizer_rnn_1): Linear(in_features=29, out_features=32, bias=True)
+  (equalizer_rnn_2): Linear(in_features=7, out_features=11, bias=True)
+)
+2022-11-06 21:32:39,777 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 21:32:39,779 - experiment_two - INFO - Epoch 1 starts
+2022-11-06 21:35:30,234 - experiment_two - INFO - Metric value 0.001787
+2022-11-06 21:35:30,236 - experiment_two - INFO - Epoch 2 starts
+2022-11-06 21:38:55,289 - experiment_two - INFO - Metric value 0.000999
+2022-11-06 21:38:55,292 - experiment_two - INFO - Epoch 3 starts
+2022-11-06 21:42:01,321 - experiment_two - INFO - Metric value 0.000393
+2022-11-06 21:42:01,322 - experiment_two - INFO - Epoch 4 starts
+2022-11-06 21:45:00,296 - experiment_two - INFO - Metric value 0.000127
+2022-11-06 21:45:00,299 - experiment_two - INFO - Epoch 5 starts
+2022-11-06 21:47:56,890 - experiment_two - INFO - Metric value 0.000124
+2022-11-06 21:47:56,893 - experiment_two - INFO - Epoch 6 starts
+2022-11-06 21:50:55,997 - experiment_two - INFO - Metric value 0.000123
+2022-11-06 21:50:56,002 - experiment_two - INFO - Epoch 7 starts
+2022-11-06 21:51:33,229 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 21:51:33,230 - experiment_two - INFO - Epoch 1 starts
+2022-11-06 21:54:29,939 - experiment_two - INFO - Metric value 0.000162
+2022-11-06 21:54:29,941 - experiment_two - INFO - Epoch 2 starts
+2022-11-06 21:58:19,553 - experiment_two - INFO - Metric value 0.000132
+2022-11-06 21:58:19,556 - experiment_two - INFO - Epoch 3 starts
+2022-11-06 22:01:35,413 - experiment_two - INFO - Metric value 0.00011
+2022-11-06 22:01:35,415 - experiment_two - INFO - Epoch 4 starts
+2022-11-06 22:05:02,169 - experiment_two - INFO - Metric value 0.000121
+2022-11-06 22:05:02,174 - experiment_two - INFO - Epoch 5 starts
+2022-11-06 22:07:43,988 - experiment_two - INFO - Metric value 8.4e-05
+2022-11-06 22:07:43,990 - experiment_two - INFO - Epoch 6 starts
+2022-11-06 22:10:18,670 - experiment_two - INFO - Metric value 8.1e-05
+2022-11-06 22:10:18,673 - experiment_two - INFO - Epoch 7 starts
+2022-11-06 22:12:56,291 - experiment_two - INFO - Metric value 0.0001
+2022-11-06 22:12:56,294 - experiment_two - INFO - Epoch 8 starts
+2022-11-06 22:15:39,831 - experiment_two - INFO - Metric value 9.5e-05
+2022-11-06 22:15:39,832 - experiment_two - INFO - Epoch 9 starts
+2022-11-06 22:18:26,195 - experiment_two - INFO - Metric value 9.8e-05
+2022-11-06 22:18:26,198 - experiment_two - INFO - Epoch 10 starts
+2022-11-06 22:21:23,447 - experiment_two - INFO - Metric value 7.5e-05
+2022-11-06 22:21:23,448 - experiment_two - INFO - Training has been accomplished for 29.84 minutes
+2022-11-06 22:23:30,190 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 22:23:30,192 - experiment_two - INFO - Epoch 1 starts
+2022-11-06 22:26:35,860 - experiment_two - INFO - Metric value 0.000116
+2022-11-06 22:26:35,863 - experiment_two - INFO - Epoch 2 starts
+2022-11-06 22:30:14,456 - experiment_two - INFO - Metric value 7.2e-05
+2022-11-06 22:30:14,462 - experiment_two - INFO - Epoch 3 starts
+2022-11-06 22:33:25,347 - experiment_two - INFO - Metric value 8.9e-05
+2022-11-06 22:33:25,350 - experiment_two - INFO - Epoch 4 starts
+2022-11-06 22:36:22,574 - experiment_two - INFO - Metric value 8.3e-05
+2022-11-06 22:36:22,582 - experiment_two - INFO - Epoch 5 starts
+2022-11-06 22:39:23,360 - experiment_two - INFO - Metric value 0.00012
+2022-11-06 22:39:23,364 - experiment_two - INFO - Epoch 6 starts
+2022-11-06 22:42:28,271 - experiment_two - INFO - Metric value 0.000112
+2022-11-06 22:42:28,274 - experiment_two - INFO - Epoch 7 starts
+2022-11-06 22:45:41,306 - experiment_two - INFO - Metric value 0.000105
+2022-11-06 22:45:41,308 - experiment_two - INFO - Epoch 8 starts
+2022-11-06 22:48:51,658 - experiment_two - INFO - Metric value 8.7e-05
+2022-11-06 22:48:51,661 - experiment_two - INFO - Epoch 9 starts
+2022-11-06 22:50:17,445 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 22:50:17,449 - experiment_two - INFO - Epoch 1 starts
+2022-11-06 22:53:17,105 - experiment_two - INFO - Metric value 7.1e-05
+2022-11-06 22:53:17,108 - experiment_two - INFO - Epoch 2 starts
+2022-11-06 22:56:32,970 - experiment_two - INFO - Metric value 7e-05
+2022-11-06 22:56:32,973 - experiment_two - INFO - Epoch 3 starts
+2022-11-06 22:59:45,934 - experiment_two - INFO - Metric value 9.9e-05
+2022-11-06 22:59:45,942 - experiment_two - INFO - Epoch 4 starts
+2022-11-06 23:02:33,535 - experiment_two - INFO - Metric value 6e-05
+2022-11-06 23:02:33,538 - experiment_two - INFO - Epoch 5 starts
+2022-11-06 23:06:03,982 - experiment_two - INFO - Metric value 8.6e-05
+2022-11-06 23:06:03,985 - experiment_two - INFO - Epoch 6 starts
+2022-11-06 23:09:08,008 - experiment_two - INFO - Metric value 9e-05
+2022-11-06 23:09:08,011 - experiment_two - INFO - Epoch 7 starts
+2022-11-06 23:12:16,619 - experiment_two - INFO - Metric value 6.8e-05
+2022-11-06 23:12:16,620 - experiment_two - INFO - Epoch 8 starts
+2022-11-06 23:15:42,757 - experiment_two - INFO - Metric value 5.2e-05
+2022-11-06 23:15:42,759 - experiment_two - INFO - Epoch 9 starts
+2022-11-06 23:18:46,578 - experiment_two - INFO - Metric value 6.3e-05
+2022-11-06 23:18:46,581 - experiment_two - INFO - Epoch 10 starts
+2022-11-06 23:21:50,622 - experiment_two - INFO - Metric value 6.4e-05
+2022-11-06 23:21:50,623 - experiment_two - INFO - Epoch 11 starts
+2022-11-06 23:25:02,977 - experiment_two - INFO - Metric value 8.8e-05
+2022-11-06 23:25:02,988 - experiment_two - INFO - Epoch 12 starts
+2022-11-06 23:28:22,414 - experiment_two - INFO - Metric value 0.0001
+2022-11-06 23:28:22,416 - experiment_two - INFO - Epoch 13 starts
+2022-11-06 23:32:17,516 - experiment_two - INFO - Metric value 5.2e-05
+2022-11-06 23:32:17,520 - experiment_two - INFO - Epoch 14 starts
+2022-11-06 23:37:38,319 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 23:37:38,321 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-06 23:38:10,800 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 23:38:10,802 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-06 23:45:54,266 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 23:45:54,269 - experiment_two - INFO - Epoch 1 starts
+2022-11-06 23:49:10,021 - experiment_two - INFO - Metric value 0.000117
+2022-11-06 23:49:10,023 - experiment_two - INFO - Epoch 2 starts
+2022-11-06 23:52:02,270 - experiment_two - INFO - Metric value 5.9e-05
+2022-11-06 23:52:02,273 - experiment_two - INFO - Epoch 3 starts
+2022-11-06 23:55:16,434 - experiment_two - INFO - Metric value 9.5e-05
+2022-11-06 23:55:16,437 - experiment_two - INFO - Epoch 4 starts
+2022-11-06 23:58:29,728 - experiment_two - INFO - Metric value 4.6e-05
+2022-11-06 23:58:29,732 - experiment_two - INFO - Training has been accomplished for 12.59 minutes
+2022-11-06 23:59:02,610 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 23:59:02,612 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-06 23:59:09,045 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-06 23:59:09,047 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-07 00:06:22,151 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-07 00:06:22,159 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-07 00:07:43,401 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-07 00:07:43,403 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-07 00:07:53,129 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-07 00:07:53,131 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-07 00:08:57,085 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-07 00:08:57,087 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-07 00:09:43,671 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-07 00:09:43,679 - experiment_two - INFO - Training has been accomplished for 0.0 minutes
+2022-11-07 00:13:49,747 - experiment_two - INFO - Quantization Aware training enabled
+2022-11-07 00:13:49,750 - experiment_two - INFO - Training has been accomplished for 0.0 minutes

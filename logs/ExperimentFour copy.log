@@ -1,0 +1,63 @@
+2022-11-06 17:40:29,155 - experiment_four - INFO - Experiment model: CRNN(
+  (conv): Conv2d(1, 5, kernel_size=(5, 20), stride=(4, 10))
+  (flatten): Flatten(start_dim=1, end_dim=2)
+  (gru): GRU(45, 18, batch_first=True, dropout=0.1)
+  (attention): Attention(
+    (energy): Sequential(
+      (0): Linear(in_features=18, out_features=18, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=18, out_features=1, bias=True)
+    )
+  )
+  (classifier): Linear(in_features=18, out_features=2, bias=True)
+  (equalizer): Linear(in_features=18, out_features=32, bias=True)
+)
+
+2022-11-06 18:24:33,663 - experiment_four - INFO - Epoch 1 starts
+2022-11-06 18:25:49,111 - experiment_four - INFO - Metric value 0.00011
+2022-11-06 18:25:49,114 - experiment_four - INFO - Epoch 2 starts
+2022-11-06 18:27:22,096 - experiment_four - INFO - Metric value 0.000105
+2022-11-06 18:27:22,099 - experiment_four - INFO - Epoch 3 starts
+2022-11-06 18:28:34,068 - experiment_four - INFO - Metric value 0.000123
+2022-11-06 18:28:34,070 - experiment_four - INFO - Epoch 4 starts
+2022-11-06 18:29:48,015 - experiment_four - INFO - Metric value 0.000118
+2022-11-06 18:29:48,017 - experiment_four - INFO - Epoch 5 starts
+2022-11-06 18:31:19,185 - experiment_four - INFO - Metric value 9.5e-05
+2022-11-06 18:31:19,187 - experiment_four - INFO - Epoch 6 starts
+2022-11-06 18:32:32,043 - experiment_four - INFO - Metric value 8.3e-05
+2022-11-06 18:32:32,045 - experiment_four - INFO - Epoch 7 starts
+2022-11-06 18:33:47,529 - experiment_four - INFO - Metric value 5.6e-05
+2022-11-06 18:33:47,532 - experiment_four - INFO - Epoch 8 starts
+2022-11-06 18:35:22,238 - experiment_four - INFO - Metric value 9.7e-05
+2022-11-06 18:35:22,240 - experiment_four - INFO - Epoch 9 starts
+2022-11-06 18:36:34,641 - experiment_four - INFO - Metric value 9.4e-05
+2022-11-06 18:36:34,643 - experiment_four - INFO - Epoch 10 starts
+2022-11-06 18:37:50,231 - experiment_four - INFO - Metric value 7.1e-05
+2022-11-06 18:37:50,233 - experiment_four - INFO - Epoch 11 starts
+2022-11-06 18:39:24,436 - experiment_four - INFO - Metric value 9.2e-05
+2022-11-06 18:39:24,438 - experiment_four - INFO - Epoch 12 starts
+2022-11-06 18:39:43,574 - experiment_four - INFO - Epoch 1 starts
+2022-11-06 18:40:56,599 - experiment_four - INFO - Metric value 9.4e-05
+2022-11-06 18:40:56,602 - experiment_four - INFO - Epoch 2 starts
+2022-11-06 18:42:23,784 - experiment_four - INFO - Metric value 7.9e-05
+2022-11-06 18:42:23,786 - experiment_four - INFO - Epoch 3 starts
+2022-11-06 18:43:32,513 - experiment_four - INFO - Metric value 9.3e-05
+2022-11-06 18:43:32,515 - experiment_four - INFO - Epoch 4 starts
+2022-11-06 18:44:55,397 - experiment_four - INFO - Metric value 6.8e-05
+2022-11-06 18:44:55,939 - experiment_four - INFO - Epoch 5 starts
+2022-11-06 18:46:25,665 - experiment_four - INFO - Metric value 7.8e-05
+2022-11-06 18:46:25,668 - experiment_four - INFO - Epoch 6 starts
+2022-11-06 18:47:37,212 - experiment_four - INFO - Metric value 6.9e-05
+2022-11-06 18:47:37,214 - experiment_four - INFO - Epoch 7 starts
+2022-11-06 18:48:52,325 - experiment_four - INFO - Metric value 7.8e-05
+2022-11-06 18:48:52,326 - experiment_four - INFO - Epoch 8 starts
+2022-11-06 18:50:25,770 - experiment_four - INFO - Metric value 5.2e-05
+2022-11-06 18:50:25,772 - experiment_four - INFO - Epoch 9 starts
+2022-11-06 18:51:38,709 - experiment_four - INFO - Metric value 6.5e-05
+2022-11-06 18:51:38,710 - experiment_four - INFO - Epoch 10 starts
+2022-11-06 18:52:54,044 - experiment_four - INFO - Metric value 5.4e-05
+2022-11-06 18:52:54,047 - experiment_four - INFO - Epoch 11 starts
+2022-11-06 18:54:07,005 - experiment_four - INFO - Epoch 1 starts
+2022-11-06 18:55:28,147 - experiment_four - INFO - Metric value 6.7e-05
+2022-11-06 18:55:28,150 - experiment_four - INFO - Epoch 2 starts
+2022-11-06 18:56:41,740 - experiment_four - INFO - Metric value 5.1e-05

@@ -1,0 +1,53 @@
+2022-11-06 20:36:04,913 - experiment_three - INFO - Experiment model: CRNN(
+  (quant): QuantStub()
+  (activation): ReLU()
+  (conv): Conv2d(1, 5, kernel_size=(7, 20), stride=(4, 10))
+  (dequant): DeQuantStub()
+  (flatten): Flatten(start_dim=1, end_dim=2)
+  (gru): GRU(45, 28, batch_first=True, dropout=0.1)
+  (attention): Attention(
+    (energy): Sequential(
+      (0): Linear(in_features=28, out_features=28, bias=True)
+      (1): Tanh()
+      (2): Linear(in_features=28, out_features=1, bias=True)
+    )
+  )
+  (classifier): Linear(in_features=28, out_features=2, bias=True)
+  (equalizer): Linear(in_features=28, out_features=32, bias=True)
+)
+2022-11-06 20:36:09,803 - experiment_three - INFO - Quantization Aware training enabled
+2022-11-06 20:36:09,806 - experiment_three - INFO - Epoch 1 starts
+2022-11-06 20:39:38,849 - experiment_three - INFO - Metric value 0.000586
+2022-11-06 20:39:38,851 - experiment_three - INFO - Epoch 2 starts
+2022-11-06 20:42:42,592 - experiment_three - INFO - Metric value 0.000447
+2022-11-06 20:42:42,594 - experiment_three - INFO - Epoch 3 starts
+2022-11-06 20:45:39,122 - experiment_three - INFO - Metric value 0.00022
+2022-11-06 20:45:39,124 - experiment_three - INFO - Epoch 4 starts
+2022-11-06 20:48:40,547 - experiment_three - INFO - Metric value 0.000157
+2022-11-06 20:48:40,549 - experiment_three - INFO - Epoch 5 starts
+2022-11-06 20:51:29,414 - experiment_three - INFO - Metric value 0.000124
+2022-11-06 20:51:29,417 - experiment_three - INFO - Epoch 6 starts
+2022-11-06 20:54:30,113 - experiment_three - INFO - Metric value 0.000107
+2022-11-06 20:54:30,115 - experiment_three - INFO - Epoch 7 starts
+2022-11-06 20:57:56,570 - experiment_three - INFO - Metric value 0.000118
+2022-11-06 20:57:56,573 - experiment_three - INFO - Epoch 8 starts
+2022-11-06 21:01:29,316 - experiment_three - INFO - Metric value 9.5e-05
+2022-11-06 21:01:29,318 - experiment_three - INFO - Epoch 9 starts
+2022-11-06 21:04:42,056 - experiment_three - INFO - Metric value 0.000121
+2022-11-06 21:04:42,061 - experiment_three - INFO - Epoch 10 starts
+2022-11-06 21:07:57,586 - experiment_three - INFO - Metric value 0.000107
+2022-11-06 21:07:57,588 - experiment_three - INFO - Epoch 11 starts
+2022-11-06 21:10:59,636 - experiment_three - INFO - Metric value 8.5e-05
+2022-11-06 21:10:59,638 - experiment_three - INFO - Epoch 12 starts
+2022-11-06 21:14:08,529 - experiment_three - INFO - Metric value 8.3e-05
+2022-11-06 21:14:08,531 - experiment_three - INFO - Epoch 13 starts
+2022-11-06 21:17:08,338 - experiment_three - INFO - Metric value 6.4e-05
+2022-11-06 21:17:08,340 - experiment_three - INFO - Epoch 14 starts
+2022-11-06 21:20:14,483 - experiment_three - INFO - Metric value 5.6e-05
+2022-11-06 21:20:14,485 - experiment_three - INFO - Epoch 15 starts
+2022-11-06 21:23:14,240 - experiment_three - INFO - Metric value 7e-05
+2022-11-06 21:23:14,243 - experiment_three - INFO - Epoch 16 starts
+2022-11-06 21:26:25,835 - experiment_three - INFO - Metric value 4.7e-05
+2022-11-06 21:26:25,838 - experiment_three - INFO - Epoch 17 starts
+2022-11-06 21:29:47,822 - experiment_three - INFO - Metric value 5e-05
+2022-11-06 21:29:47,825 - experiment_three - INFO - Training has been accomplished for 53.63 minutes
