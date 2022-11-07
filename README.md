@@ -14,7 +14,7 @@ While more broad descriptions can be found in the notebook itself, here we prese
     
     **C**. Compression rate 8.26
     
-    **D**. Quality 
+    **D**. Quality 4.58
   
 2. Experiment **"Stupid student, Smart teacjer"** (Winner)
     
@@ -49,11 +49,11 @@ While more broad descriptions can be found in the notebook itself, here we prese
 
 * #### How to reproduce your model?
 
-All the required code and hyperparameters' values can be found in cells, devoted to each experiment. However, it is essential to underscore that models hardly rely on the chosen seed's value. Nevertheless, it sometimes might take quite more / less epochs than stated, so special condition to exit training loop at sufficient quality was added.
+All the required code and hyperparameters' values can be found in cells, devoted to each experiment. Moreover, in models directory all saved states can be found. However, it is essential to underscore that models hardly rely on the chosen seed's value. Nevertheless, it sometimes might take quite more / less epochs than stated, so special condition to exit training loop at sufficient quality was added.
 
-However, mainly we take T = 10 and high value of alpha for dark KD, train for approximate 15-20 epochs with lr starting from 3e-3, going down to 2e-4 in step manner. 
+Nevertheless, mainly we take T = 10 and high value of alpha for dark KD, train for approximate 25-30 epochs with lr starting from 3e-3, going down to 2e-4 in step manner or freezing it at 7e-4. 
 
-* Training logs for each experiment are all placed in the respective directory.
+* Training logs for each experiment are all placed in the respective directory. Also, the glued sound for kws graph in notebook can be found there.
 
 * What worked and what didn't work?
 
