@@ -1,4 +1,4 @@
-# ASR_sound
+# KeyWord Spotting
 
 ## Brief report  
 
@@ -28,7 +28,7 @@ Also to add is pruning. This tool really tried it's best to bleed me dry. First 
 
 Last to mention is the usage of RNN insted of GRU. While some collegues asserted there is a way to train it for the benchmark, we did not succeed in it, at least for good rates of speed and compression for a very long time. Only a really hard search for hyperparameters has accidently given us the desired quality.
 
-* What were the major challenges?
+* #### What were the major challenges?
 
 1. torch library implementation of QAT appeared to be ambiguous and partially a real rocket science. While they have an outstanding lecture (I also recommend to share it for future years), still it's embodiement was not as easy as it could be imagined. Nevertheless, it worked and thanks God for it. Additionally, it could not be used with CUDA, which is makes calculations more complicated.
 
